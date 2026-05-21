@@ -34,11 +34,12 @@ const values = [
 
 
 const timeline = [
-{ year: "2009", event: "Founded as a small gasket cutting shop in Gorava GIDC,Vadodara,Gujarat" },
-{ year: "2010", event: "Expanded to full-service manufacturing ." },
-{ year: "2010", event: "Achieved ISO 9001 certification and international expansion" },
-{ year: "2025", event: "Invested in Advance machining and advanced testing facilities" },
-{ year: "2024", event: "Serving 500+ clients across 40 countries worldwide" }];
+  { year: "2009", event: "Founded as a small gasket cutting shop in Gorwa GIDC, Vadodara, Gujarat" },
+  { year: "2010", event: "Expanded to full-service manufacturing capabilities" },
+  { year: "2015", event: "Achieved ISO 9001 certification and launched international sales" },
+  { year: "2024", event: "Serving 500+ B2B clients across 40 countries worldwide" },
+  { year: "2025", event: "Invested in advanced machining and state-of-the-art testing facilities" }
+];
 
 
 export default function AboutPage() {
@@ -46,31 +47,29 @@ export default function AboutPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 bg-hero">
-        <div className="absolute inset-0 industrial-pattern opacity-20" />
+        <div className="absolute inset-0 industrial-pattern opacity-30 shadow-inner" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-6">
               About DAVE Gaskets
             </h1>
-            <p className="text-xl text-steel-light leading-relaxed">
+            <p className="text-xl text-steel-light leading-relaxed font-medium">
               For over 41 years, we've been engineering sealing solutions that keep industries running. Our commitment to quality, precision, and customer service has made us a trusted partner for companies worldwide.
-            
-
             </p>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-secondary">
+      <section className="py-12 bg-secondary/80">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) =>
             <div key={stat.label} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-accent mb-2">
+                <div className="text-4xl md:text-5xl font-display font-extrabold text-accent mb-2">
                   {stat.value}
                 </div>
-                <div className="text-muted-foreground font-medium">{stat.label}</div>
+                <div className="text-muted-foreground font-semibold tracking-wide text-sm">{stat.label}</div>
               </div>
             )}
           </div>
@@ -89,7 +88,7 @@ export default function AboutPage() {
                 <p>
                   Dave Gaskets was founded in 2009 by a team of mechanical engineers 
                   who recognized the critical role sealing solutions play in industrial 
-                  safety and efficiency. Starting from a small workshop in Houston, Texas, 
+                  safety and efficiency. Starting from a small workshop in Vadodara, Gujarat, 
                   we've grown into a global manufacturer serving diverse industries.
                 </p>
                 <p>
@@ -110,12 +109,12 @@ export default function AboutPage() {
             <div className="relative">
               <img
                 src={qualityControlImage}
-                alt="Quality control at Precision Gaskets"
-                className="rounded-xl shadow-xl" />
+                alt="Quality control at Dave Gaskets"
+                className="rounded-2xl shadow-xl border border-border/50" />
               
-              <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-lg">
-                <div className="text-3xl font-display font-bold">41+</div>
-                <div className="text-sm font-medium">Years of Excellence</div>
+              <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-lg shadow-accent/20">
+                <div className="text-3xl font-display font-extrabold text-white">41+</div>
+                <div className="text-sm font-semibold tracking-wide text-white">Years of Excellence</div>
               </div>
             </div>
           </div>
@@ -195,7 +194,7 @@ export default function AboutPage() {
               Our Commitment to You
             </h2>
             <p className="text-steel-light text-lg leading-relaxed mb-8">
-              At Precision Gaskets, we understand that a gasket failure can mean 
+              At DAVE Gaskets, we understand that a gasket failure can mean 
               costly downtime, safety risks, and environmental concerns. That's why 
               we're committed to delivering products that exceed specifications and 
               provide reliable, long-lasting sealing performance.

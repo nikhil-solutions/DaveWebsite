@@ -33,17 +33,17 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-xl font-display">P</span>
+              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center shadow-accent">
+                <span className="text-accent-foreground font-bold text-xl font-display">D</span>
               </div>
               <div>
-                <h3 className="font-display font-bold text-lg">Dave Gaskets</h3>
-                <p className="text-steel text-xs">Industrial Sealing Solutions</p>
+                <h3 className="font-display font-bold text-lg text-white">Dave Gaskets</h3>
+                <p className="text-steel text-xs uppercase tracking-wider font-semibold">Industrial Sealing Solutions</p>
               </div>
             </div>
             <p className="text-steel-light text-sm leading-relaxed mb-6">
-              Delivering Dave Gaskets and sealing solutions to industries 
-              worldwide since 2009. Quality, reliability, and innovation at every seal.
+              Delivering high-quality gaskets and sealing solutions to industries 
+              worldwide since 2009. Quality, reliability, and innovation in every seal.
             </p>
             <div className="flex gap-3">
               <a
@@ -69,7 +69,7 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-6">Products</h4>
+            <h4 className="font-display font-semibold text-lg text-white mb-6">Products</h4>
             <ul className="space-y-3">
               {productLinks.map((link) =>
               <li key={link.href}>
@@ -86,7 +86,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-6">Company</h4>
+            <h4 className="font-display font-semibold text-lg text-white mb-6">Company</h4>
             <ul className="space-y-3 mb-6">
               {companyLinks.map((link) =>
               <li key={link.href}>
@@ -99,7 +99,7 @@ export function Footer() {
                 </li>
               )}
             </ul>
-            <h4 className="font-display font-semibold text-lg mb-4">Industries</h4>
+            <h4 className="font-display font-semibold text-lg text-white mb-4">Industries</h4>
             <ul className="space-y-2">
               {industries.map((industry) =>
               <li key={industry} className="text-steel text-sm">
@@ -111,7 +111,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-6">Contact Us</h4>
+            <h4 className="font-display font-semibold text-lg text-white mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
@@ -134,10 +134,10 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent flex-shrink-0" />
                 <a
-                  href="mailto:sales@precisiongaskets.com"
+                  href="mailto:sales@daveengineers.in"
                   className="text-steel-light hover:text-accent transition-colors text-sm">
                   
-                  sales@precisiongaskets.com
+                  sales@daveengineers.in
                 </a>
               </li>
             </ul>
@@ -146,10 +146,10 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-steel/20">
+      <div className="border-t border-border/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-steel">
-            <p>© 2024 Precision Gaskets. All rights reserved.</p>
+            <p>© 2026 DAVE Gaskets. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>

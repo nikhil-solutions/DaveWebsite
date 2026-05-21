@@ -93,33 +93,31 @@ export default function HomePage() {
             alt="Industrial gasket manufacturing"
             className="w-full h-full object-cover" />
           
-          <div className="absolute inset-0 bg-hero opacity-90" />
-          <div className="absolute inset-0 industrial-pattern opacity-30" />
+          <div className="absolute inset-0 bg-hero opacity-95" />
+          <div className="absolute inset-0 industrial-pattern opacity-40" />
         </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10 py-20">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in">
-              <Cog className="h-4 w-4" />
+          <div className="max-w-3xl animate-scale-in">
+            <div className="inline-flex items-center gap-2 bg-blue-500/10 text-blue-200 border border-blue-500/25 px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-sm">
+              <Cog className="h-4 w-4 text-blue-400" />
               <span>ISO 9001:2015 Certified Manufacturer</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-              <span className="text-gradient text-[#f6fafd]">DAVE Engineers Pvt. Ltd.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-white leading-tight mb-6 tracking-tight">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-50 to-blue-200">DAVE Engineers Pvt. Ltd.</span>
             </h1>
-            <p className="text-lg md:text-xl text-steel-light leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              Welcome To Dave Engineers
-Dave Engineers is an approved gasket manufacturers from Engineers India Ltd. EIL the company is situated at Vadodara (Gujarat) India. The gaskets meeting international standards , is achieved by means of controlled process by latest machines , which insure total repeatability in such critical areas.repeatability in such critical areas. We have research and development department with compression testing machine and laboratory to supported by product specialist & having expertise knowledge about products, application & having extensive field experience to support customers as per requirements and exacting international standards such as AP1 601 ,ASME B 16.2 ,ASME B 16.47 A & B series,DIN, British Standard, JIS Standard and others as specified.
-            
+            <p className="text-lg md:text-xl text-steel-light/90 leading-relaxed mb-8 font-medium">
+              Approved gasket manufacturer by Engineers India Ltd. (EIL). Situating our state-of-the-art facilities in Vadodara, Gujarat, we deliver gaskets meeting strict international standards via automated, highly repeatable processes. Supported by dedicated research and expert product specialists, we serve customers globally under ASME, API, DIN, BS, and JIS specifications.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <Button variant="hero" size="xl" asChild>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="hero" size="xl" asChild className="bg-accent hover:bg-orange-dark text-white shadow-lg hover:shadow-xl transition-all">
                 <Link to="/contact?quote=true">
                   Request a Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="xl" asChild>
+              <Button variant="hero-outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10 hover:border-white/50">
                 <Link to="/products/spiral-wound">
                   Explore Products
                 </Link>
@@ -127,27 +125,27 @@ Dave Engineers is an approved gasket manufacturers from Engineers India Ltd. EIL
             </div>
 
             {/* Trust indicators */}
-            <div className="mt-12 flex flex-wrap gap-6 items-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <div className="mt-12 flex flex-wrap gap-8 items-center">
               <div className="flex items-center gap-2 text-steel-light">
                 <CheckCircle2 className="h-5 w-5 text-accent" />
-                <span className="text-sm">35+ Years Experience</span>
+                <span className="text-sm font-semibold tracking-wide">41+ Years Experience</span>
               </div>
               <div className="flex items-center gap-2 text-steel-light">
                 <CheckCircle2 className="h-5 w-5 text-accent" />
-                <span className="text-sm">10,000+ Products</span>
+                <span className="text-sm font-semibold tracking-wide">10,000+ Products</span>
               </div>
               <div className="flex items-center gap-2 text-steel-light">
                 <CheckCircle2 className="h-5 w-5 text-accent" />
-                <span className="text-sm">Global Delivery</span>
+                <span className="text-sm font-semibold tracking-wide">Global Delivery</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-steel/50 flex items-start justify-center p-2">
-            <div className="w-1.5 h-3 bg-accent rounded-full" />
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-2 backdrop-blur-sm">
+            <div className="w-1.5 h-3 bg-accent rounded-full animate-bounce" />
           </div>
         </div>
       </section>
