@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Industrial Gasket Manufacturing Design System
-   Colors: Deep navy, steel grey, charcoal with safety orange accent
-   Typography: Clean, technical, authoritative
+/* Modern Corporate Sealing Solutions Design System
+   Colors: Royal Blue, White, Silver, Deep Navy
+   Typography: Clean, premium, authoritative
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Core palette - Industrial Navy & Steel */
-    --background: 210 20% 98%;
+    /* Core palette - Corporate Navy & Royal Blue */
+    --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
@@ -21,20 +21,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Primary - Deep Navy */
+    /* Primary - Deep B2B Navy */
     --primary: 222 47% 11%;
     --primary-foreground: 210 40% 98%;
 
-    /* Secondary - Steel Grey */
-    --secondary: 215 20% 93%;
+    /* Secondary - Cool Silver */
+    --secondary: 215 20% 95%;
     --secondary-foreground: 222 47% 11%;
 
     /* Muted - Subtle grey */
     --muted: 215 20% 95%;
     --muted-foreground: 215 16% 47%;
 
-    /* Accent - Safety Orange */
-    --accent: 24 95% 53%;
+    /* Accent - Royal Blue */
+    --accent: 221 83% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -42,66 +42,66 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 24 95% 53%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Friendly, modern rounded corners */
 
-    /* Custom Industrial Colors */
-    --navy-deep: 222 47% 8%;
-    --navy: 222 47% 11%;
-    --navy-light: 222 35% 20%;
-    --steel: 215 20% 65%;
-    --steel-light: 215 20% 85%;
-    --charcoal: 220 13% 18%;
-    --slate: 215 16% 47%;
-    --orange: 24 95% 53%;
-    --orange-dark: 24 95% 45%;
+    /* Custom Corporate Colors */
+    --navy-deep: 222 47% 6%;
+    --navy: 222 47% 10%;
+    --navy-light: 221 35% 18%;
+    --steel: 215 16% 80%;
+    --steel-light: 215 20% 96%;
+    --charcoal: 222 47% 12%;
+    --slate: 215 16% 40%;
+    --orange: 221 83% 53%; /* Map old orange names to Royal Blue to prevent breaks */
+    --orange-dark: 221 83% 45%;
     --success: 142 71% 45%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(222 47% 8%) 0%, hsl(222 35% 15%) 50%, hsl(220 13% 22%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(222 47% 11%) 0%, hsl(222 47% 8%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(24 95% 53%) 0%, hsl(24 95% 45%) 100%);
-    --gradient-steel: linear-gradient(135deg, hsl(215 20% 75%) 0%, hsl(215 20% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 6%) 0%, hsl(221 40% 12%) 60%, hsl(221 83% 20%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(222 47% 10%) 0%, hsl(222 47% 6%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(221 83% 45%) 100%);
+    --gradient-steel: linear-gradient(135deg, hsl(215 20% 96%) 0%, hsl(215 20% 90%) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.1), 0 2px 4px -2px hsl(222 47% 11% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.1), 0 4px 6px -4px hsl(222 47% 11% / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(222 47% 11% / 0.1), 0 8px 10px -6px hsl(222 47% 11% / 0.1);
-    --shadow-accent: 0 10px 30px -10px hsl(24 95% 53% / 0.4);
+    --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.03);
+    --shadow-md: 0 4px 20px -2px hsl(222 47% 11% / 0.05), 0 2px 8px -2px hsl(222 47% 11% / 0.05);
+    --shadow-lg: 0 12px 30px -4px hsl(222 47% 11% / 0.08), 0 4px 12px -4px hsl(222 47% 11% / 0.08);
+    --shadow-xl: 0 20px 40px -6px hsl(222 47% 11% / 0.1), 0 8px 16px -6px hsl(222 47% 11% / 0.1);
+    --shadow-accent: 0 10px 30px -10px hsl(221 83% 53% / 0.3);
 
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 221 83% 53%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 24 95% 53%;
+    --sidebar-ring: 221 83% 53%;
   }
 
   .dark {
-    --background: 222 47% 8%;
+    --background: 222 47% 6%;
     --foreground: 210 40% 98%;
-    --card: 222 47% 11%;
+    --card: 222 47% 10%;
     --card-foreground: 210 40% 98%;
-    --popover: 222 47% 11%;
+    --popover: 222 47% 10%;
     --popover-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
-    --primary-foreground: 222 47% 11%;
-    --secondary: 217 33% 17%;
+    --primary-foreground: 222 47% 10%;
+    --secondary: 221 35% 15%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 17%;
+    --muted: 221 35% 15%;
     --muted-foreground: 215 20% 65%;
-    --accent: 24 95% 53%;
+    --accent: 221 83% 53%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 24 95% 53%;
+    --border: 221 35% 15%;
+    --input: 221 35% 15%;
+    --ring: 221 83% 53%;
   }
 }
 
@@ -116,7 +116,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
     @apply font-semibold tracking-tight;
   }
 }
@@ -141,18 +141,18 @@
 
   .industrial-pattern {
     background-image: 
-      radial-gradient(circle at 1px 1px, hsl(var(--steel) / 0.15) 1px, transparent 0);
+      radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.04) 1px, transparent 0);
     background-size: 24px 24px;
   }
 
   .steel-shine {
     background: linear-gradient(
       135deg,
-      hsl(215 20% 75%) 0%,
-      hsl(215 20% 85%) 25%,
-      hsl(215 20% 70%) 50%,
-      hsl(215 20% 80%) 75%,
-      hsl(215 20% 75%) 100%
+      hsl(215 20% 96%) 0%,
+      hsl(215 20% 98%) 25%,
+      hsl(215 20% 92%) 50%,
+      hsl(215 20% 97%) 75%,
+      hsl(215 20% 96%) 100%
     );
   }
 }
@@ -179,3 +179,4 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--slate));
 }
+

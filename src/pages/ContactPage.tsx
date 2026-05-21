@@ -327,14 +327,14 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="h-96 bg-secondary">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221066.26738386138!2d-95.58842867206516!3d29.81763175655987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1706547890123!5m2!1sen!2s"
+          src="https://maps.google.com/maps?q=Survey%20No%20573,%20Lilora,%20Vadodara-Halol%20Highway,%20Jarod,%20Gujarat%20391510&t=&z=14&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Precision Gaskets Location" />
+          title="DAVE Gaskets Location" />
         
       </section>
     </div>);
