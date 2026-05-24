@@ -59,7 +59,8 @@
     --success: 142 71% 45%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(222 47% 6%) 0%, hsl(221 40% 12%) 60%, hsl(221 83% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 18%) 0%, hsl(221 40% 28%) 60%, hsl(221 83% 40%) 100%);
+
     --gradient-dark: linear-gradient(180deg, hsl(222 47% 10%) 0%, hsl(222 47% 6%) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(221 83% 45%) 100%);
     --gradient-steel: linear-gradient(135deg, hsl(215 20% 96%) 0%, hsl(215 20% 90%) 100%);
@@ -140,7 +141,7 @@
   }
 
   .industrial-pattern {
-    background-image: 
+    background-image:
       radial-gradient(circle at 1px 1px, hsl(var(--primary) / 0.04) 1px, transparent 0);
     background-size: 24px 24px;
   }
