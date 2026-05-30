@@ -1,30 +1,33 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Linkedin, Facebook, Twitter } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const productLinks = [
-{ name: "Metallic Gaskets", href: "/products/metallic" },
-{ name: "Non-Metallic Gaskets", href: "/products/non-metallic" },
-{ name: "Spiral Wound Gaskets", href: "/products/spiral-wound" },
-{ name: "RTJ Gaskets", href: "/products/rtj" },
-{ name: "Custom-Cut Gaskets", href: "/products/custom" }];
+  { name: "Metallic Gaskets", href: "/products/metallic" },
+  { name: "Non-Metallic Gaskets", href: "/products/non-metallic" },
+  { name: "Spiral Wound Gaskets", href: "/products/spiral-wound" },
+  { name: "RTJ Gaskets", href: "/products/rtj" },
+  { name: "Custom-Cut Gaskets", href: "/products/custom" }];
 
 
 const companyLinks = [
-{ name: "About Us", href: "/about" },
-{ name: "Manufacturing & Quality", href: "/manufacturing" },
-{ name: "Contact", href: "/contact" }];
+  { name: "About Us", href: "/about" },
+  { name: "Manufacturing & Quality", href: "/manufacturing" },
+  { name: "Contact", href: "/contact" }];
 
 
 const industries = [
-"Oil & Gas",
-"Power Generation",
-"Chemical Processing",
-"Pharmaceutical",
-"Automotive",
-"Refineries"];
+  "Oil & Gas",
+  "Power Generation",
+  "Chemical Processing",
+  "Pharmaceutical",
+  "Automotive",
+  "Refineries"];
 
 
 export function Footer() {
+  const location = useLocation();
+
   return (
     <footer className="bg-primary text-primary-foreground">
       {/* Main Footer */}
