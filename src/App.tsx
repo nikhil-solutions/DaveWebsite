@@ -13,6 +13,9 @@ import ProductPage from "./pages/ProductPage";
 import ProductsIndex from "./pages/ProductsIndex";
 import NotFound from "./pages/NotFound";
 
+import PortalPage from "./pages/PortalPage";
+import CompositeMaintenance from "./pages/CompositeMaintenance";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -25,7 +28,9 @@ const App = () => (
           <Header />
           <main className="flex-1">
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<PortalPage />} />
+              <Route path="/sealing" element={<HomePage />} />
+              <Route path="/composite-maintenance" element={<CompositeMaintenance />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/manufacturing" element={<ManufacturingPage />} />
               <Route path="/contact" element={<ContactPage />} />

@@ -13,10 +13,10 @@ const productLinks = [
 
 
 const navLinks = [
-{ name: "Home", href: "/" },
-{ name: "About Us", href: "/about" },
-{ name: "Manufacturing", href: "/manufacturing" },
-{ name: "Contact", href: "/contact" }];
+  { name: "Home", href: "/sealing" },
+  { name: "About Us", href: "/about" },
+  { name: "Manufacturing", href: "/manufacturing" },
+  { name: "Contact", href: "/contact" }];
 
 
 export function Header() {
