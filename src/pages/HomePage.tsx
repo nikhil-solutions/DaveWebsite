@@ -188,7 +188,7 @@ export default function HomePage() {
             {products.map((product, index) =>
             <Link
               key={product.title}
-              to={product.href}
+              to={`${product.href}#overview`}
               className="group relative overflow-hidden rounded-xl bg-card shadow-md hover:shadow-xl transition-all duration-300">
               
                 <div className="aspect-[4/3] overflow-hidden">

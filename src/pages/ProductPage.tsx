@@ -1,5 +1,6 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 import { ArrowRight, ArrowLeft, CheckCircle2, Thermometer, Gauge, Shield, Cog } from "lucide-react";
 import spiralWoundImage from "@/assets/spiral-wound-gasket.png";
 import rtjImage from "@/assets/rtj-gasket.jpg";
@@ -217,6 +218,19 @@ export default function ProductPage() {
   const { productType } = useParams<{ productType: string }>();
   const product = productType ? productsData[productType] : null;
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   if (!product) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -260,7 +274,7 @@ export default function ProductPage() {
       </section>
 
       {/* Product Overview */}
-      <section className="py-20">
+      <section id="overview" className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
